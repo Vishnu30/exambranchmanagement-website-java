@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>STUDENT REGISTRATION.....</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            #heading{
+                background-color: #cc00cc;
+                width: 700px;
+                height: 60px;
+                margin: 0px auto 0px auto;
+            }
+            .head1{
+                background-color: #ffffff;
+                color:  #993300;
+               height: 40px;
+               width: 600px;
+               margin: 50px auto 0px 40px;
+               padding-left: 15px;
+                 position: relative;
+               top: 10px;
+               left: 5px;
+               padding-top: 2px;
+            }
+           
+            ul{
+                width: 600px;
+                padding-bottom:10px;
+                padding-top: 10px;
+                margin: 0px auto 0px auto;
+                border-top: 2px solid #0066ff;
+                border-bottom: 1px solid #0066ff;  
+            }
+            li{
+                display: inline;
+                margin-left: 40px;
+                 font-family: cursive;
+                font-style: italic;
+            }
+            
+            .image1{
+                width: 700px;
+                height: 400px;
+                margin: 60px 0px auto 80px;
+            }
+            .image{
+                background-color: #ccffff;
+                width: 900px;
+                height: 500px;
+                margin: 0px auto 0px auto;
+            }
+            .inform{
+                color: #990099;
+                font-style: oblique;
+            }
+            a:hover{
+                background-color: #66ffff;
+                color: #6666ff;
+            }
+            a:visited{
+                text-decoration: underline;
+            }
+            a:link{
+                text-decoration: none;
+            }
+            a:active{
+                color:magenta;
+            }
+            h3{
+                margin-left: 500px;
+                padding-bottom: 10px;
+                color: #33ff33
+            }
+            .form1{
+                width: 800px;
+                background-color: darkorange;
+                margin: 0px auto 10px auto;
+                
+            }
+            .in1{
+                border-color: #990099;
+                margin-left: 15px;
+                padding-left: 30px;
+                margin-bottom: 10px;
+            }
+            .in2{  
+                border-color: #990099;
+                margin-left: 20px;
+                padding-left: 30px;
+                margin-bottom: 10px;
+            }  
+            
+            .in3{
+              border-color: #990099;
+               margin-left: 30px;
+               padding-left: 30px; 
+               margin-bottom: 10px;
+               padding-left: 20px;
+
+            }
+            .in4{
+               border-color: #990099;
+                margin-left: 5px; 
+            }
+            .in5{
+               border-color: #990099;
+                margin-left: 5px;
+            }
+            .in6{
+                border-color: #990099;
+                margin-left: 5px;
+            }
+            .in7{
+                 border-color: #990099;
+                 margin-left: 20px;
+                 padding-left: 30px; 
+                 margin-bottom:  10px;
+            }
+            .in8{
+                 border-color: #990099;
+                 margin-bottom:  10px;
+                 margin-left: 40px;
+            }
+            
+            .b1{
+                color:  #339900;
+                background-color:  #00cc99;
+                margin-left: 40px;
+                margin-bottom: 10px;
+            }
+            .b2{
+                color:  #339900;
+                background-color:  #00cc99;
+                margin-left: 70px;
+                margin-bottom: 10px;
+            }
+             .s1{
+                margin-left: 95px;
+            }
+            .s2{
+                margin-left: 70px;
+            }
+            .s3{
+                margin-left: 53px;
+            }
+            .s4{
+                margin-left: 50px;
+            }
+            .s5{
+                margin-left: 10px;
+               
+            }
+            .s6{
+                margin-left: 40px;
+               
+            }
+            .s8{
+                margin-left: 5px;
+            }
+            .s7{
+                margin-left: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="heading">
+            <h2 class="head1">EXAM  BRANCH MANAGEMENT SYSTEM</h2>
+        </div><br>
+            <ul >
+                <li><a href="homepage.html" >HOME</a></li>
+                <li><a href="student.html">STUDENT</a></li>
+                <li><a href="admin.html">ADMIN</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul><br><br>
+            <div class="image">
+            <img  class="image1" src="images/imag1.jpg" />
+            </div>
+            <h2 class="inform">WELCOME to Exam Branch Management System..........</h2>
+            <h3>Student Registration Form</h3>
+            <form action='studentsave.jsp' method='post' class='form1' >
+                <span class="s7">HT no:<input type='text' class="in1" name="htno" required="required"/><br></span>
+                <span class="s8">Name:<input type="text" class="in2" name="name" required="required"/></span>
+                <span class="s4">Password:<input type='password' class="in3" name="pass" required="required"/></span>
+                <div class="in4">YEAR:<select name="year" style="color:chocolate" required="required" class="s1" >
+                    <option  value="null">select the year...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    </select></div><br>
+                   
+                    <div class="in5">BRANCH:<select name="branch" style="color:chocolate" required="required" class="s2" >
+                    <option  value="null">select the branch...</option>
+                    <option value="CSE">CSE</option>
+                    <option value="MPAE">MPAE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="IT">IT</option>
+                        </select></div><br>
+                        
+                    <div class="in6">SEMESTER:<select name="sem" style="color:chocolate" required="required" class="s3" >
+                    <option  value="null">select the semester...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                        </select></div><br>
+                   
+                        <span class="s5"> Email:<input type='text' class="in7" required="required" name="email"/></span>
+                        <span class="s6">Phone no:<input type='text' class="in8" required="required" name="phone"/></span><br>
+                 <input type="submit" value="REGISTER" name="submit" class="b1" />
+                 <input type="reset" value="RESET" name="reset"  class="b2"/>
+            </form><br><br><br><br><br>
+           
+            
+    </body>
+</html>

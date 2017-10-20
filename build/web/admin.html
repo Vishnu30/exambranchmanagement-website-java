@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ADMIN LOGIN PAGE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style type="text/css">
+            #heading{
+                background-color: #ff0000;
+                width: 700px;
+                height: 70px;
+                margin: 0px auto 0px auto;
+            }
+            .head1{
+               background-color: #ffffff;
+               color:  #ffcc00;
+               height: 50px;
+               width: 550px;
+               margin: 20px auto 0px 40px;
+               padding-left: 30px;
+               position: relative;
+               top: 10px;
+               left: 5px;
+               background:   ;
+                   position:
+            }
+           
+            ul{
+                width: 600px;
+                padding-bottom:10px;
+                padding-top: 10px;
+                margin: 0px auto 0px auto;
+                border-top: 2px solid #0066ff;
+                border-bottom: 1px solid #0066ff;  
+            }
+            li{
+                display: inline;
+                margin-left: 40px;
+                 font-family: cursive;
+                font-style: italic;
+            }
+            
+            .image1{
+                width: 800px;
+                height: 400px;
+                margin: 60px 0px auto 40px;
+            }
+            .image{
+                background-color: #99cc00;
+                width: 900px;
+                height: 500px;
+                margin: 0px auto 0px auto;
+            }
+            .inform{
+                color: #990099;
+                font-style: oblique;
+            }
+             a:hover{
+                background-color: #66ffff;
+                color: #6666ff;
+            }
+            a:visited{
+                color: #003399;
+                text-decoration: underline;
+            }
+            a:link{
+                text-decoration: none;
+            }
+            a:active{
+                color:magenta;
+            }
+            .form1{
+                width: 300px;
+                float:right;
+            }
+            .in1{
+                border-radius: 10px;
+                border-color: #9999ff;
+                color: magenta;
+               margin-bottom: 10px;
+               margin-left: 25px;
+            }
+            .in2{
+                border-radius: 10px;
+                border-color: #9999ff;
+                color: magenta;
+                margin-bottom: 10px;
+                margin-left: 30px;
+            }
+            h3{
+                padding-left: 700px;
+                padding-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="heading">
+            <h2 class="head1">EXAM BRANCH MANAGEMENT SYSTEM</h2>
+        </div><br>
+            <ul >
+                <li><a href="homepage.html" >HOME</a></li>
+                <li><a href="student.html">STUDENT</a></li>
+                <li><a href="admin.html">ADMIN</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul><br><br>
+            <div class="image">
+            <img  class="image1" src="images/office.jpg" />
+            </div>
+            <h2 class="inform">WELCOME to Exam Branch Management System..........</h2>
+             <h3>Admin Login</h3>
+            <form action="adminlogin.jsp">
+                <div class="form1">
+                   
+                    USERNAME:<input type="text" class="in1" name="n1"/>
+                    PASSWORD:<input type="password" class="in2" name="n2"/>
+                <input type="submit" value="LOGIN" name="submit" />
+                </div>
+            </form>
+            
+    </body>
+</html>
